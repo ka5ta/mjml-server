@@ -13,7 +13,8 @@ $ mjml-server
 ```
 $ http://127.0.0.1:1410
 ```
-- Content-type: **application/x-www-form-urlencoded**</br>
+- Content-type: 
+```application/x-www-form-urlencoded```
 - Body: 
    * Key: `mjml`
 

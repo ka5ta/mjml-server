@@ -15,11 +15,9 @@ $ http://127.0.0.1:1410
 ```
 - Content-type: **application/x-www-form-urlencoded**</br>
 - Body: 
-  - Key:
-```
-mjml
-```
-  - Value:
+   * Key: `mjml`
+
+   * Value:
 ```
 <mjml>
   <mj-body>

@@ -1,32 +1,41 @@
-# Installation
+# <img src="https://i.ibb.co/cLHNZbr/drawing-logo.png" width="40" height="40" /> Driver Subscription - Part 1
+Project cloned from [Siepomaga/mjml-server](https://github.com/Siepomaga/mjml-server) </br>
+Microservice. Server used to render mjml code into html string
+
+# Run
 
 ```
-$ npm install -g mjml-server
-```
-
-# Usage
-
-```
-$ mjml-server -h
-
-  Usage: mjml-server [options]
-
-  Options:
-
-    -V, --version       output the version number
-    -p, --port <n>      port of server (default: 1410)
-    --hostname [value]  port of server (default: 127.0.0.1)
-    -h, --help          output usage information
+$ mjml-server
 ```
 
 # Example request
 
 ```
-$ curl http://127.0.0.1:1410 -d mjml="<mjml></mjml>"
-
-    <!doctype html>
-    <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
-      <head>
-        <title>
-...
+$ http://127.0.0.1:1410
 ```
+- Content-type: **application/x-www-form-urlencoded**</br>
+- Body: 
+  - Key:
+```
+mjml
+```
+  - Value:
+```
+<mjml>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+
+        <mj-image width="100px" src="/assets/img/logo-small.png"></mj-image>
+
+        <mj-divider border-color="#F45E43"></mj-divider>
+
+        <mj-text font-size="20px" color="#F45E43" font-family="helvetica">Hello World</mj-text>
+
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
+```
+
+
